@@ -154,7 +154,7 @@ def startCommand(_, message):
         return app.send_message(
             message.chat.id,
             f"من فضلك `{message.from_user.first_name}`,\n"
-            f"اشترك في   **قناتنا** و **الجروب التابع لها**.",
+            f"اشترك في   **قناتنا** و **الجروب التابع لها**. \n\n باقي البوتات هنا \n\n https://t.me/ibnAlQyyim/1120 \n\n و لدعم استمرار المشروع هنا \n\n  http://paypal.me/kelectronic89 \n\n",
             parse_mode="md",
             reply_markup=InlineKeyboardMarkup([
                 [
@@ -193,7 +193,7 @@ def source_or_github(_, message):
         return app.send_message(
             message.chat.id,
             f"من فضلك `{message.from_user.first_name}`,\n"
-            f"اشترك في قناتنا و الجروب التابع لها ",
+            f"اشترك في قناتنا و الجروب التابع لها \n\n باقي البوتات هنا \n\n https://t.me/ibnAlQyyim/1120 \n\n و لدعم استمرار المشروع هنا \n\n  http://paypal.me/kelectronic89 \n\n ",
             parse_mode="md",
             reply_markup=InlineKeyboardMarkup([
                 [
@@ -260,7 +260,7 @@ def commands(_, message):
         return app.send_message(
             message.chat.id,
             f"من فضلك `{message.from_user.first_name}`,\n"
-            f"اشترك في قناتنا والجروب التابع لها",
+            f"اشترك في قناتنا والجروب التابع لها \n\n باقي البوتات هنا \n\n https://t.me/ibnAlQyyim/1120 \n\n و لدعم استمرار المشروع هنا \n\n  http://paypal.me/kelectronic89 \n\n",
             parse_mode="md",
             reply_markup=InlineKeyboardMarkup([
                 [
