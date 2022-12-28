@@ -101,29 +101,7 @@ def checkUserJoinStatus(user_id):
 
 
 @app.on_message(filters.video or filters.video_note or filters.document)
-def extractAudio(_, message):
-    userjoinStatus = checkUserJoinStatus(message.from_user.id)
-    if not userjoinStatus:
-        return app.send_message(
-            message.chat.id,
-            f"Sorry `{message.from_user.first_name}`,\n"
-            f"I can't let you use me until you join both my **Channel** and **Group**.",
-            parse_mode="md",
-            reply_markup=InlineKeyboardMarkup([
-                [
-                    InlineKeyboardButton(
-                        text="🖥Channel💺",
-                        url="https://t.me/IndianBots",
-                        ),
-                ],
-                [
-                    InlineKeyboardButton(
-                        text="🧬Group🚦",
-                        url="https://t.me/IndianBotsChat",
-                    ),
-                ]
-            ])
-        )
+def extractAudio(_, message):    
     infoMessage = app.send_message(
         message.chat.id,
         "Downloading - 0%",
