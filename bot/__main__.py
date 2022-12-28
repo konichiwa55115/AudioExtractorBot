@@ -153,20 +153,20 @@ def startCommand(_, message):
     if not userjoinStatus:
         return app.send_message(
             message.chat.id,
-            f"Sorry `{message.from_user.first_name}`,\n"
-            f"I can't let you use me until you join both my **Channel** and **Group**.",
+            f"من فضلك `{message.from_user.first_name}`,\n"
+            f"اشترك في   **قناتنا** و **الجروب التابع لها**.",
             parse_mode="md",
             reply_markup=InlineKeyboardMarkup([
                 [
                     InlineKeyboardButton(
                         text="🖥Channel💺",
-                        url="https://t.me/IndianBots",
+                        url="https://t.me/ibnAlQyyim",
                         ),
                 ],
                 [
                     InlineKeyboardButton(
                         text="🧬Group🚦",
-                        url="https://t.me/IndianBotsChat",
+                        url="https://t.me/nase7aaa",
                     ),
                 ]
             ])
@@ -192,20 +192,20 @@ def source_or_github(_, message):
     if not userjoinStatus:
         return app.send_message(
             message.chat.id,
-            f"Sorry `{message.from_user.first_name}`,\n"
-            f"I can't let you use me until you join both my **Channel** and **Group**.",
+            f"من فضلك `{message.from_user.first_name}`,\n"
+            f"اشترك في قناتنا و الجروب التابع لها ",
             parse_mode="md",
             reply_markup=InlineKeyboardMarkup([
                 [
                     InlineKeyboardButton(
                         text="🖥Channel💺",
-                        url="https://t.me/IndianBots",
+                        url="https://t.me/ibnAlQyyim",
                         ),
                 ],
                 [
                     InlineKeyboardButton(
                         text="🧬Group🚦",
-                        url="https://t.me/IndianBotsChat",
+                        url="https://t.me/nase7aaa",
                     ),
                 ]
             ])
@@ -223,20 +223,20 @@ def commands(_, message):
     if not userjoinStatus:
         return app.send_message(
             message.chat.id,
-            f"Sorry `{message.from_user.first_name}`,\n"
-            f"I can't let you use me until you join both my **Channel** and **Group**.",
+            f"من فضلك `{message.from_user.first_name}`,\n"
+            f"اشترك في قناتنا و الجروب التابع لها ",
             parse_mode="md",
             reply_markup=InlineKeyboardMarkup([
                 [
                     InlineKeyboardButton(
                         text="🖥Channel💺",
-                        url="https://t.me/IndianBots",
+                        url="https://t.me/ibnAlQyyim",
                         ),
                 ],
                 [
                     InlineKeyboardButton(
                         text="🧬Group🚦",
-                        url="https://t.me/IndianBotsChat",
+                        url="https://t.me/nase7aaa",
                     ),
                 ]
             ])
@@ -259,20 +259,20 @@ def commands(_, message):
     if not userjoinStatus:
         return app.send_message(
             message.chat.id,
-            f"Sorry `{message.from_user.first_name}`,\n"
-            f"I can't let you use me until you join both my **Channel** and **Group**.",
+            f"من فضلك `{message.from_user.first_name}`,\n"
+            f"اشترك في قناتنا والجروب التابع لها",
             parse_mode="md",
             reply_markup=InlineKeyboardMarkup([
                 [
                     InlineKeyboardButton(
                         text="🖥Channel💺",
-                        url="https://t.me/IndianBots",
+                        url="https://t.me/ibnAlQyyim",
                         ),
                 ],
                 [
                     InlineKeyboardButton(
                         text="🧬Group🚦",
-                        url="https://t.me/IndianBotsChat",
+                        url="https://t.me/nase7aaa",
                     ),
                 ]
             ])
