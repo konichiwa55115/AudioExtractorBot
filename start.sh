@@ -1,4 +1,5 @@
 echo "Cloning Repo...."
+apt install ffmpeg
 git clone https://github.com/konichiwa55115/AudioExtractorBot /LazyDeveloper
 cd /LazyDeveloper
 pip3 install -r requirements.txt
