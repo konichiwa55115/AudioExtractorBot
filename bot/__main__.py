@@ -63,7 +63,7 @@ def downloadProgress(current, total, message):
         message.chat.id,
         message.message_id,
         f"Downloading - `{current}` **Bytes**",
-        parse_mode="md",
+        parse_mode=enums.ParseMode.MARKDOWN,
     )
 
 
@@ -74,7 +74,7 @@ def uploadProgress(current, total, message):
         f"Uploading -\n"
         f"`{current}/{total}` **Bytes**\n"
         f"Progress - {current * 100 / total:.1f}%✅",
-        parse_mode="md",
+        parse_mode=enums.ParseMode.MARKDOWN,
     )
 
 
@@ -155,7 +155,7 @@ def startCommand(_, message):
             message.chat.id,
             f"من فضلك `{message.from_user.first_name}`,\n"
             f"اشترك في   **قناتنا** و **الجروب التابع لها**. \n\n باقي البوتات هنا \n\n https://t.me/ibnAlQyyim/1120 \n\n و لدعم استمرار المشروع هنا \n\n  http://paypal.me/kelectronic89 \n\n",
-            parse_mode="md",
+            parse_mode=enums.ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup([
                 [
                     InlineKeyboardButton(
@@ -182,7 +182,7 @@ def startCommand(_, message):
         f"[FFmpeg](https://www.ffmpeg.org/)\n"
         f"[Python](https://www.python.org/)",
         disable_web_page_preview=True,
-        parse_mode='md',
+        parse_mode=enums.ParseMode.MARKDOWN,
     )
 
 
@@ -194,7 +194,7 @@ def source_or_github(_, message):
             message.chat.id,
             f"من فضلك `{message.from_user.first_name}`,\n"
             f"اشترك في قناتنا و الجروب التابع لها \n\n باقي البوتات هنا \n\n https://t.me/ibnAlQyyim/1120 \n\n و لدعم استمرار المشروع هنا \n\n  http://paypal.me/kelectronic89 \n\n ",
-            parse_mode="md",
+            parse_mode=enums.ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup([
                 [
                     InlineKeyboardButton(
@@ -225,7 +225,7 @@ def commands(_, message):
             message.chat.id,
             f"من فضلك `{message.from_user.first_name}`,\n"
             f"اشترك في قناتنا و الجروب التابع لها ",
-            parse_mode="md",
+            parse_mode=enums.ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup([
                 [
                     InlineKeyboardButton(
@@ -249,7 +249,7 @@ def commands(_, message):
         "/commands - Show this message\n"
         "/start - Restart/Refresh the bot\n"
         "/help - Get help on how to use me.",
-        parse_mode="md",
+        parse_mode=enums.ParseMode.MARKDOWN,
     )
 
 
@@ -261,7 +261,7 @@ def commands(_, message):
             message.chat.id,
             f"من فضلك `{message.from_user.first_name}`,\n"
             f"اشترك في قناتنا والجروب التابع لها \n\n باقي البوتات هنا \n\n https://t.me/ibnAlQyyim/1120 \n\n و لدعم استمرار المشروع هنا \n\n  http://paypal.me/kelectronic89 \n\n",
-            parse_mode="md",
+            parse_mode=enums.ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup([
                 [
                     InlineKeyboardButton(
@@ -282,7 +282,7 @@ def commands(_, message):
         "It's real **easy** to use me.\n"
         "All you need to do is send me a **video file** and i will **extract the audio** "
         "and send it to you.",
-        parse_mode="md",
+        parse_mode=enums.ParseMode.MARKDOWN,
     )
 
 
