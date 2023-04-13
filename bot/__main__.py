@@ -26,6 +26,7 @@ from threading import Thread
 # sitePackages
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram import enums
 
 # selfMade
 from config import Config
