@@ -62,7 +62,7 @@ def downloadProgress(current, total, message):
     del total
     app.edit_message_text(
         message.chat.id,
-        message.message_id,
+        message.id,
         f"Downloading - `{current}` **Bytes**",
         parse_mode=enums.ParseMode.MARKDOWN,
     )
@@ -71,7 +71,7 @@ def downloadProgress(current, total, message):
 def uploadProgress(current, total, message):
     app.edit_message_text(
         message.chat.id,
-        message.message_id,
+        message.id,
         f"Uploading -\n"
         f"`{current}/{total}` **Bytes**\n"
         f"Progress - {current * 100 / total:.1f}%✅",
@@ -83,10 +83,10 @@ def delMessage(message):
     try:
         app.delete_messages(
             message.chat.id,
-            message.message_id,
+            message.id,
         )
     except Exception as _:
-        print(f"[Errno 0] Can't delete message: '{message.message_id}'")
+        print(f"[Errno 0] Can't delete message: '{message.id}'")
 
 
 def checkUserJoinStatus(user_id):
@@ -106,7 +106,7 @@ def extractAudio(_, message):
     infoMessage = app.send_message(
         message.chat.id,
         "Downloading - 0%",
-        reply_to_message_id=message.message_id,
+        reply_to_message_id=message.id,
     )
     try:
         _ = message.video
@@ -115,7 +115,7 @@ def extractAudio(_, message):
             progress=downloadProgress,
             progress_args=(infoMessage,),
         )
-        resultFile = f"{message.from_user.id}-{message.message_id}"
+        resultFile = f"{message.from_user.id}-{message.id}"
         spawn(f"ffmpeg -i {filePath} -f mp3 -ab 192000 -vn -loglevel quiet ./extracted/{resultFile}.mp3")
         if not path.exists(f"./extracted/{resultFile}.mp3"):
             return app.send_message(message.chat.id, "Couldn't Extract The Audio From This File. Sorry!")
