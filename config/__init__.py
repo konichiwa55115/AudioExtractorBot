@@ -23,6 +23,6 @@ initialRelease - 21/06/21
 from os import environ
 
 class Config(object):
-    botToken: str = "5908177113:AAFwtz9pgtwZLNQrpYM0lTK8pw8ser75c-c"
+    botToken: str = "6026272284:AAG8qBeaZc5xjYmYfMq1YWsKimoK0D0ap_0"
     apiId: str = "17983098"
     apiHash: str = "ee28199396e0925f1f44d945ac174f64"
